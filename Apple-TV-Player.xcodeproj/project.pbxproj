@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -97,6 +97,10 @@
 		82F60DB3297D602E00DA7E1B /* TeleguideInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F60DB2297D602E00DA7E1B /* TeleguideInfoProvider.swift */; };
 		82F60DB7297D744600DA7E1B /* TeleguideInfoParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F60DB6297D744600DA7E1B /* TeleguideInfoParserTests.swift */; };
 		82F60DB9297D8ED300DA7E1B /* epg.xml.gz in Resources */ = {isa = PBXBuildFile; fileRef = 82F60DB8297D8ED300DA7E1B /* epg.xml.gz */; };
+		A3EBBB6F2ACD984600CF95D3 /* ktv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3EBBB6E2ACD984600CF95D3 /* ktv.bundle */; };
+		A3EBBB702ACD984600CF95D3 /* ktv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3EBBB6E2ACD984600CF95D3 /* ktv.bundle */; };
+		A3EBBB712ACD984600CF95D3 /* ktv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3EBBB6E2ACD984600CF95D3 /* ktv.bundle */; };
+		A3EBBB722ACD984600CF95D3 /* ktv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3EBBB6E2ACD984600CF95D3 /* ktv.bundle */; };
 		B741D18A5E3EAF5A806C5881 /* Pods_ChannelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DCF2331EE978490BDD10ED /* Pods_ChannelsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -251,6 +255,7 @@
 		82F60DB6297D744600DA7E1B /* TeleguideInfoParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleguideInfoParserTests.swift; sourceTree = "<group>"; };
 		82F60DB8297D8ED300DA7E1B /* epg.xml.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = epg.xml.gz; sourceTree = "<group>"; };
 		9E2F78C0EF84DB991D9A0B9E /* Pods-Channels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Channels.release.xcconfig"; path = "Target Support Files/Pods-Channels/Pods-Channels.release.xcconfig"; sourceTree = "<group>"; };
+		A3EBBB6E2ACD984600CF95D3 /* ktv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ktv.bundle; sourceTree = "<group>"; };
 		E0DCF2331EE978490BDD10ED /* Pods_ChannelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChannelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4754F3D16A60B1D9E3EAF0D /* Pods-Apple-TV-Player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apple-TV-Player.release.xcconfig"; path = "Target Support Files/Pods-Apple-TV-Player/Pods-Apple-TV-Player.release.xcconfig"; sourceTree = "<group>"; };
 		F287F9E892E155B390BBC40A /* Pods-ChannelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChannelsTests.debug.xcconfig"; path = "Target Support Files/Pods-ChannelsTests/Pods-ChannelsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -427,6 +432,7 @@
 		826BBC7C2561C23C003A69CA /* IpTvProvider */ = {
 			isa = PBXGroup;
 			children = (
+				A3EBBB6D2ACD984600CF95D3 /* ktv */,
 				82C2D13C29633D3F00301067 /* ottclub */,
 				826BBC7D2561C264003A69CA /* 2090000 */,
 			);
@@ -799,6 +805,14 @@
 			path = Zip;
 			sourceTree = "<group>";
 		};
+		A3EBBB6D2ACD984600CF95D3 /* ktv */ = {
+			isa = PBXGroup;
+			children = (
+				A3EBBB6E2ACD984600CF95D3 /* ktv.bundle */,
+			);
+			path = ktv;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -898,8 +912,9 @@
 		82F3D2602538D9AC0021BB2E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					82DDEB02253E2A4300F3B1EE = {
 						CreatedOnToolsVersion = 12.1;
@@ -925,6 +940,7 @@
 			knownRegions = (
 				en,
 				ru,
+				Base,
 			);
 			mainGroup = 82F3D25F2538D9AC0021BB2E;
 			productRefGroup = 82F3D2692538D9AC0021BB2E /* Products */;
@@ -951,6 +967,7 @@
 				82DDEB11253E2A8F00F3B1EE /* android.m3u8 in Resources */,
 				82F60DB9297D8ED300DA7E1B /* epg.xml.gz in Resources */,
 				82C56DC12947096B00DA4585 /* another.m3u in Resources */,
+				A3EBBB722ACD984600CF95D3 /* ktv.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -959,6 +976,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E82D70256A7ACF00E3D250 /* plst.m3u in Resources */,
+				A3EBBB702ACD984600CF95D3 /* ktv.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -977,6 +995,7 @@
 				82F046A2255EF9280052E2E8 /* PlaylistViewController.storyboard in Resources */,
 				82F3D2BA2538EABC0021BB2E /* LaunchScreen.storyboard in Resources */,
 				82742D28255FDC12001B2B25 /* ChannelPlayerViewController.storyboard in Resources */,
+				A3EBBB6F2ACD984600CF95D3 /* ktv.bundle in Resources */,
 				82F3D2B02538E9220021BB2E /* Localizable.strings in Resources */,
 				820AC4742572E7D600932015 /* ProviderBundleCellView.xib in Resources */,
 				820AC44D2572E43900932015 /* SelectProviderCellView.xib in Resources */,
@@ -993,6 +1012,7 @@
 				8229F723257D45B200A9389E /* channels-ico-ru.bundle in Resources */,
 				826BBC7F2561C299003A69CA /* ru2090000.bundle in Resources */,
 				82C2D13E29633D5900301067 /* ottclub.bundle in Resources */,
+				A3EBBB712ACD984600CF95D3 /* ktv.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1223,6 +1243,7 @@
 			baseConfigurationReference = 82E82D86256A941000E3D250 /* Debug-ChannelsTests.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L82W68ZF47;
 				INFOPLIST_FILE = ChannelsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1240,6 +1261,7 @@
 			baseConfigurationReference = 82E82D87256A941F00E3D250 /* Release-ChannelsTests.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L82W68ZF47;
 				INFOPLIST_FILE = ChannelsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1258,6 +1280,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L82W68ZF47;
 				INFOPLIST_FILE = "Apple-TV-PlayerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1278,6 +1301,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L82W68ZF47;
 				INFOPLIST_FILE = "Apple-TV-PlayerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1330,6 +1354,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1392,6 +1417,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1419,11 +1445,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L82W68ZF47;
 				INFOPLIST_FILE = "$(SRCROOT)/Apple-TV-Player/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "phitar.com.Apple-TV-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Apple-TV-Player/Utils/Apple-TV-Player-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1442,11 +1470,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L82W68ZF47;
 				INFOPLIST_FILE = "$(SRCROOT)/Apple-TV-Player/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "phitar.com.Apple-TV-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Apple-TV-Player/Utils/Apple-TV-Player-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1460,12 +1490,15 @@
 			baseConfigurationReference = 82F3D2A92538E70F0021BB2E /* Debug-Channels.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L82W68ZF47;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Channels/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1473,6 +1506,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = example.apple.com.Channels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -1490,12 +1526,15 @@
 			baseConfigurationReference = 82F3D2AA2538E7430021BB2E /* Release-Channels.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L82W68ZF47;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Channels/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1503,6 +1542,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = example.apple.com.Channels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
